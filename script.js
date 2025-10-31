@@ -1,5 +1,5 @@
 // script.js file ka content
-const BACKEND_URL = 'http://127.0.0.1:5000/calculate_bhada'; 
+const BACKEND_URL = 'https://bhada-calculator-api.onrender.com/calculate_bhada';
 // !!! NOTE: Yah abhi local URL hai. Isko hum Render Deployment ke baad change karenge !!!
 
 document.getElementById('calculate-btn').addEventListener('click', calculateBhada);

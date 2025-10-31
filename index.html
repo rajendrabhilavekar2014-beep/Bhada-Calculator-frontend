@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🚛 Indian Truck Bhada Calculator Pro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>🚛 Bhada Calculator Pro</h1>
+        <p>Advanced Freight, Toll & Fuel Cost Estimator for Indian Trucks</p>
+    </header>
+
+    <main>
+        <div class="calculator-container">
+            <h2>Trip Details</h2>
+            
+            <div class="input-group">
+                <label for="origin">Source Address:</label>
+                <input type="text" id="origin" value="Pune, Maharashtra">
+            </div>
+            <div class="input-group">
+                <label for="destination">Destination Address:</label>
+                <input type="text" id="destination" value="Ahmedabad, Gujarat">
+            </div>
+            
+            <div class="input-group">
+                <label for="truck_model">Truck Model (For Mileage):</label>
+                <select id="truck_model">
+                    <option value="TATA 1618">TATA 1618</option>
+                    <option value="ASHOK LEYLAND ECOMET">ASHOK LEYLAND ECOMET</option>
+                    <option value="OTHER" selected>Other / Default</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="load_weight_tons">Load Weight (Tons):</label>
+                <input type="number" id="load_weight_tons" value="15" min="1">
+            </div>
+            <div class="input-group">
+                <label for="material_type">Material Type (Bhada Rate):</label>
+                <select id="material_type">
+                    <option value="NORMAL" selected>Normal Goods</option>
+                    <option value="COSTLY">Costly / Fragile (Premium Rate)</option>
+                </select>
+            </div>
+
+            <button id="calculate-btn">Calculate Bhada</button>
+            
+            <div class="ads-slot">
+                AdSense Ad Slot 1
+            </div>
+
+            <div id="result-area" class="result-box" style="display: none;">
+                <h3>Total Quotation: <span id="final-quote">₹0</span></h3>
+                <p>Base Freight Income: <span id="base-freight">₹0</span></p>
+                <button id="show-details-btn">Show Cost Breakdown</button>
+                <div id="breakdown-details" style="display: none;">
+                    <h4>Cost Breakdown:</h4>
+                    <p>Fuel Cost: <span id="cost-fuel">₹0</span></p>
+                    <p>Toll Charges: <span id="cost-toll">₹0</span></p>
+                </div>
+            </div>
+
+            <div class="manual-settings-toggle">
+                <a href="#" id="toggle-manual">Advanced Settings / Manual Edit (Pro)</a>
+            </div>
+
+            <div id="manual-inputs" style="display: none;" class="pro-feature">
+                <h3>Manual Overrides (Pro Feature)</h3>
+                <div class="input-group">
+                    <label for="manual_mileage">Set Mileage (kpl):</label>
+                    <input type="number" id="manual_mileage" placeholder="Auto: 4.2">
+                </div>
+                <div class="input-group">
+                    <label for="driver_charge">Driver Daily Charge:</label>
+                    <input type="number" id="driver_charge" value="800">
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Bhada Calculator Pro. Terms and Privacy.</p>
+    </footer>
+
+    <script src="script.js"></script> 
+</body>
+  </html>
+  
